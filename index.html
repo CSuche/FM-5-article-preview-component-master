@@ -43,15 +43,34 @@
             <h2>Michelle Appleton</h2> 
             <p>28 Jun 2020</p> 
           </div>
-          
-          <button><span>Share</span></button>
+          <div class="button" onclick="myFunction()">share
+            <span class="share" id="shareContent">
+              <img src="/images/icon-facebook.svg" alt="">
+              <img src="/images/icon-twitter.svg" alt="">
+              <img src="/images/icon-pinterest.svg" alt="">
+              <button id="button2"><span>Share</span></button>
+            </span>
+          </div>
         </div>
       </div>
+
+      
       
     </main>
   <!-- </div> -->
   
-  
+  <script>
+    function myFunction() {
+    var touch = document.getElementById("shareContent");
+    touch.classList.toggle("show");
+    }
+    
+    // const touch = document.querySelector('#button');
+
+    // touch.addEventListener('click'), () => {
+    //   touch.
+    // }
+  </script>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

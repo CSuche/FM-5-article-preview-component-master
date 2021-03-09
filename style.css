@@ -68,7 +68,38 @@ h2{
     margin: 4px auto 2px;
 }
 
-button{
+.button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.button .share{
+    visibility: hidden;
+}
+
+.button .share::after{
+    content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.button .show{
+    visibility: visible;
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+/* #button{
     background: url(/images/icon-share.svg) no-repeat;
     background-position: center;
     background-color: hsl(210, 46%, 95%);
@@ -79,6 +110,35 @@ button{
     margin: 6px 0 2px 58px;
 }
 
-button span {
+#button span {
     display: none;
-  }
+}
+
+#share{
+    display: none;
+    width: 100%;
+    height: 5rem;
+    text-transform: uppercase;
+    background-color: hsl(214, 17%, 51%);
+    justify-content: space-around;
+}
+
+#share img{
+    height: 20px;
+}
+
+#button2{
+    background: url(/images/icon-share.svg) no-repeat;
+    background-position: center;
+    background-color: hsl(210, 46%, 95%);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    margin: 6px 0 2px 58px;
+}
+
+#button2 span {
+    display: none;
+} */
