@@ -43,22 +43,36 @@
             <h2>Michelle Appleton</h2> 
             <p>28 Jun 2020</p> 
           </div>
-          <button id="button"><span>Share</span></button>
+
+          <div class="popup" onclick="myFunction()">Share
+            <span class="popuptext" id="myPopup"><img src="/images/icon-facebook.svg" alt="">
+        <img src="/images/icon-twitter.svg" alt="">
+        <img src="/images/icon-pinterest.svg" alt="">
+        <button id="button2"><span>Share</span></button></span>
+          </div>
         </div>
       </div>
 
       <div id="share">
         <p>share</p>
-        <img src="/images/icon-facebook.svg" alt="">
-        <img src="/images/icon-twitter.svg" alt="">
-        <img src="/images/icon-pinterest.svg" alt="">
-        <button id="button2"><span>Share</span></button>
+        
       </div>
       
+      
+
     </main>
   <!-- </div> -->
   
-  <script></script>
+  <script>
+    // var touch = document.getElementById("share");
+    // touch.display
+
+    // When the user clicks on <div>, open the popup
+    function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+    }
+  </script>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
